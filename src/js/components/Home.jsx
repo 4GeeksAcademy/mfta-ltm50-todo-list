@@ -116,7 +116,7 @@ const Home = () => {
 			>
 				{
 					errorMsg && (
-						<div className="alert alert-danger" role="alert">
+						<div className="alert alert-danger w-100" role="alert">
 							{errorMsg}
 						</div>
 					)
@@ -149,7 +149,7 @@ const Home = () => {
 				<div className="d-flex justify-content-between align-items-center w-100">
 					<p className="text-start form-text my-2">{todos.length} tareas</p>
 					<button
-						className="btn btn-sm btn-outline-danger"
+						className={`btn btn-sm btn-outline-danger ${todos.length === 0 ? "invisible" : ""}`}
 						disabled={isLoading || todos.length === 0}
 						data-bs-toggle="modal"
 						data-bs-target="#confirmModal"
