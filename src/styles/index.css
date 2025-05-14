@@ -1,11 +1,19 @@
-/* 
+.bg-purple-100 {
+    background-color: #f3e8ff;
+}
+.bg-purple-50 {
+    background-color: #faf5ff;
+}
+.bg-purple-50:hover {
+    background-color: #ffffff;
+}
+.bg-purple-50 button {
+    display: none;
+}
+.bg-purple-50:hover button {
+    display: block;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.text-purple-900 {
+    color: #581c87;
+}
